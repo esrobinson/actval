@@ -5,8 +5,8 @@ class Assumptions:
 	def __init__(self, interest, maleMortality, femaleMorality, maleDisability,
 				 femaleDisability, turnover, retirement):
 		self.interest = float(interest)
-		self.maleMortality = self.loadTable('./rates/'+maleMortality)
-		self.femaleMortality = self.loadTable('./rates/'+femaleMorality)
+		self.maleMortality = self.loadTable('./rates/mortality/'+maleMortality)
+		self.femaleMortality = self.loadTable('./rates/mortality/'+femaleMorality)
 		self.maleDisability = self.loadTable('./rates/'+maleDisability)
 		self.femaleDisability = self.loadTable('./rates/'+femaleDisability)
 		self.turnover = self.loadTable('./rates/'+turnover)

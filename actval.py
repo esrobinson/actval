@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 import assumptions
 import tables
@@ -13,3 +15,4 @@ assumptionSet = assumptions.Assumptions(assumptionInput[0], assumptionInput[1],
 										assumptionInput[4], assumptionInput[5],
 										assumptionInput[6])
 
+print tables.generateAnnuityTable(assumptionSet, "m")
